@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="GridScreen" extends="Group" initialFocus="RowList"> <!-- Extende o componente de grupo e coloca o foco no componente RowList quando a tela ganha foco. -->
+    <script type="text/brightscript" uri="GridScreen.brs" />
+
+      <!-- Permite que o conteúdo seja adicionado a tela. -->
+      <interface>
+         <field id="content" type="node" alias="RowList.content" /> <!-- alias expõe o campo de conteúdo da tela ao seu componente filho  do RowList-->
+      </interface>
+
+      <children>
+         <!-- Label com o título do conteúdo. -->
+         <Label
+              id="titleLabel"
+              width="1020"
+              translation="[130,170]"
+         />
+  
+         <!-- Label com a descrição do conteúdo. 
+              wrap = "true" e numLines = "3" siginifica que o texto pode ser quebrado em 3 linhas.
+         -->
+         <Label
+              id="descriptionLabel"
+              wrap="true"
+              width="1020"
+              numLines="5"
+              translation="[130, 220]"
+         />
+
+          <RowList
+              itemComponentItem="RowListItemComponent"
+              id="rowList"
+              translation="[80,480]"
+              numRows="2"
+              rowitemSize="[[320,180]]"
+              rowItemSpacing="[[20,0]]"
+              itemSize="[1100,270]"
+              owLabelOffset="[[50,20]]"
+              focusXOffset="[50]"
+              showRowLabel="[true]"
+              rowFocusAnimationStyle="floatingfocus"
+          />
+      </children>
+       
+       
+    
+</component>

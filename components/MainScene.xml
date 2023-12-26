@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="MainScene"  extends="Scene">
+     <script type="text/brightscript" uri="MainScene.brs" />
+     <script type="text/brightscript" uri="UILogic/DinamicScreen.brs" />
+     <script type="text/brightscript" uri="UILogic/GridScreen.brs" />
+     <script type="text/brightscript" uri="UILogic/ContentScreen.brs" />
+
+   <children>
+      <Overhang
+        showOptions="false"
+        clockShow="true"
+      	width="120" 
+      	height="720" 
+      	/>
+
+         <Label 
+         id="loading"
+         text="Escolha seu filme"
+         width="230"
+         height="100"
+         translation="[60, 180]"
+         horizAlign="center"
+         vertAlign="center"
+         font="font:MediumBoldSystemFont"
+        />
+
+    </children>
+
+   
+</component>
+
