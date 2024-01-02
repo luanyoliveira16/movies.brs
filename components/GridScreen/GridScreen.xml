@@ -19,7 +19,7 @@
          <!-- Label com a descrição do conteúdo. 
               wrap = "true" e numLines = "3" siginifica que o texto pode ser quebrado em 3 linhas.
          -->
-         <Label
+         <Label 
               id="descriptionLabel"
               wrap="true"
               width="1020"
